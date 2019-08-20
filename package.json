@@ -1,6 +1,6 @@
 {
   "name": "sparc-stellate-navigation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Navigates s3 file structure and sends file urls to plotsvy",
   "main": "index.js",
   "scripts": {
