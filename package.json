@@ -1,8 +1,8 @@
 {
-  "name": "sparc-stellate-navigation",
-  "version": "1.0.1",
+  "name": "file-tree-navigation",
+  "version": "1.0.4",
   "description": "Navigates s3 file structure and sends file urls to plotsvy",
-  "main": "index.js",
+  "main": "./build/build.js",
   "scripts": {
     "build": "webpack --mode=none",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,8 +14,7 @@
   "author": "Jesse Khorasanee",
   "license": "ISC",
   "dependencies": {
-    "js-treeview": "^1.1.5",
-    "plotsvy": "^0.2.0"
+    "js-treeview": "^1.1.5"
   },
   "devDependencies": {
     "webpack": "^4.39.2",

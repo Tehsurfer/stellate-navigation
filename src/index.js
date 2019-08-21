@@ -1,9 +1,8 @@
 // index.js - Loads file structure and links the html elements to corresponding s3 urls
 
 const TreeView = require('js-treeview')
-const Plotsvy = require('plotsvy')
 
-function SparcStellateNavigation(targetDiv){ 
+function FileTreeNavigation(targetDiv){ 
     var s3path = 'https://mapcore-bucket1.s3-us-west-2.amazonaws.com/ISAN/csv-data/stellate/'
     var fileStructureUrl = 'https://jsonstorage.net/api/items/stellate-file-structure'
     var treeData = undefined
@@ -12,7 +11,6 @@ function SparcStellateNavigation(targetDiv){
         response.json().then(json => {
             treeData = json['data']
         bootDemo()
-        bootPlotsvy()
         })
     })
 
@@ -25,13 +23,8 @@ function SparcStellateNavigation(targetDiv){
         })
     }
 
-    function bootPlotsvy(){
-        plotsvyDiv = document.createElement('DIV')
-        targetDiv.after(plotsvyDiv)
-        plotsvy = new Plotsvy.Plotsvy(plotsvyDiv)
-    }
 }
 
-exports.SparcStellateNavigation = SparcStellateNavigation
+exports.FileTreeNavigation = FileTreeNavigation
 
 
